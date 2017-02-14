@@ -40,7 +40,7 @@ function createTemplate (data) {
                 </div>
                 <div>
                     <p>
-                        This is my new Webpage 1 and happy to use it
+                        This is my new Webpage and happy to use it
                     </p>
                 </div>
             </div>    
