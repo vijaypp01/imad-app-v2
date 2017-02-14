@@ -9,13 +9,12 @@ var articleOne = {
     title: 'Vijay|Article one',
     heading: 'Article One',
     date: 'feb 14, 2017'
-    content: `This is my new Webpage 1 and happy to use it`
 };
-function createTemplate(data) {
+
+function createTemplate (data) {
     var title = data.title;
     var heading = data.heading;
     var date = data.date;
-    var content = dta.content;
     var htmltemplate = `
         
         <html>
@@ -41,13 +40,12 @@ function createTemplate(data) {
                 </div>
                 <div>
                     <p>
-                        ${content}
+                        This is my new Webpage 1 and happy to use it
                     </p>
                 </div>
             </div>    
         </body>
     </html>
-        
     `;
     return htmltemplate;
 }
@@ -64,7 +62,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-one', function(req,res) {
-    res.send(createTemplate(article-one));
+    res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req,res) {
