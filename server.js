@@ -6,24 +6,24 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    article-one: {
+     'article-one': {
         title: 'Vijay|Article one',
         heading: 'Article One',
         date: 'feb 14, 2017'
     },
-    article-two: {
+     'article-two': {
         title: 'Vijay|Article Two',
         heading: 'Article Two',
         date: 'feb 15, 2017'
         
     },
-    article-three: { 
+     'article-three' : { 
         title: 'Vijay|Article Three',
         heading: 'Article Three',
         date: 'feb 16, 2017'
     }
 };    
-
+  
 
 function createTemplate (data) {
     var title = data.title;
@@ -76,6 +76,8 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/:articleName', function(req,res) {
+    //articleName == article-one
+    //articles[articleName] == {} content object for article One
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[atricleName]));
 });
