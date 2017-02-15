@@ -1,4 +1,4 @@
 console.log('Loaded!');
 //to change the text in the window
-var element = document.getelementById("main-text");
+var element = document.getElementById("main-text");
 element.insertHTML = "New text"
