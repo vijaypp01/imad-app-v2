@@ -11,5 +11,5 @@ button.onclick = function() {
     //render the variable
     counter = counter + 1;
     var span = document.getElementById('count');
-    spam.innerHTML = counter.toString();
+    span.innerHTML = counter.toString();
 };
