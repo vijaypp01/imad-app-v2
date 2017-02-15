@@ -18,6 +18,6 @@ button.onclick = function() {
         }
     };
     //Make a request
-    request.open('GET','http://cijaypp01.imad.hasura-app.io/counter',true);
+    request.open('GET','http://vijaypp01.imad.hasura-app.io/counter',true);
     request.send(null);
 };
