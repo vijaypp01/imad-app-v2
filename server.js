@@ -13,24 +13,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-     'article-one': {
-        title: 'Vijay|Article one',
-        heading: 'Article One',
-        date: 'feb 14, 2017'
-    },
-     'article-two': {
-        title: 'Vijay|Article Two',
-        heading: 'Article Two',
-        date: 'feb 15, 2017'
-        
-    },
-     'article-three' : { 
-        title: 'Vijay|Article Three',
-        heading: 'Article Three',
-        date: 'feb 16, 2017'
-    }
-};    
 var counter = 0;  
 app.get('/counter', function (req, res) {
     counter = counter + 1;
